@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elegant Yachting Tours</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Yachting Tours Page">
+        <meta name="keywords" content="Yachting, yachts, water, tours, sailing holidays">
+        <meta name="author" content="David Smith">
+        <meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+        <script>
+            const button = document.querySelector(".shrink-border");
+
+            button.addEventListener("click", function () {
+                window.location.href = "tours.html";
+            });
+        </script>
+    </head>
+    <body>
+        <!-- Navigation section -->
+         <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Header section -->
+         <div class="container">
+            <div class="header-content">
+                <h1>Elegant Yachting Tours</h1>
+                <h2>An experience that will sail your dreams into reality!</h2>
+            </div>
+            <div class="button-container">
+                <button class="shrink-border" onclick="window.location.href='tours.html'">Start Your Tour</button>
+            </div>
+        </div>
+
+        <!-- Discovery section -->
+         <section class="chapter-section">
+            <h2 id="change">Discover the Ocean's Mysteries</h2>
+            <p>
+                Set sail with us as we explore untouched islands, crystal clear waters, and breathtaking sunsets. 
+                Every tour is a curated experience, ensuring you witness the beauty and tranquility of the sea. 
+                Join us on a voyage of discovery and indulge in the luxury that only Elegant Yachting Tours can offer.
+            </p>
+        </section>
+
+        <!-- Footer section -->
+         <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Elegant Yachting Tours All rights reserved</p>
+                <ul class="footer-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <p class="footer-socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>

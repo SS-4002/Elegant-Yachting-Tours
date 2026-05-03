@@ -1,0 +1,410 @@
+body {
+    background-color: #32323c;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #e6e6e6;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #e6e6e6;
+}
+
+/* Chapter Section Styles */
+
+.chapter-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 80px auto;
+    max-width: 800px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #e6e6e6;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.chapter-section p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+/* Navigation Styles */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    z-index: 1000;
+    background-color: rgba(50, 50, 60, 0.95);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.52);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #e6e6e6;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding: 5px 10px;
+    position: relative;
+}
+
+nav a:hover {
+    color: #1b1b20;
+    border-bottom: 3px solid #e6e6e6;
+}
+
+/* Header Section Styles */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    background-image: url("images/yacht.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Header Section Styles - Containers*/
+
+.header-content, .button-container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Header Section Styles - Button*/
+
+button {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 18px;
+    transform: 0.2s;
+    background-color: 0.2s;
+    border-radius: 3px;
+    padding: 23px 33px;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+
+.shrink-border {
+    background-color: transparent;
+    /*color: #1b1b20;*/
+    color: #d3d3d3;
+}
+
+.shrink-border:hover {
+    background-color: transparent;
+    box-shadow: none;
+    color: #e6e6e6;
+}
+
+.shrink-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #959595;
+    transition: opacity 0.3s, border 0.3s;
+}
+
+.shrink-border:hover::before {
+    opacity: 0;
+}
+
+.shrink-border::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 5px solid #e6e6e6;
+    opacity: 0;
+    z-index: -1;
+    transform: scaleX(1.1) scaleY(1.3);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.shrink-border:hover:after {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+}
+
+/* Footer Section Styles */
+
+footer {
+    background-color: #1b1b20;
+    padding: 40px 0;
+    color: #e6e6e6;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #e6e6e6;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: cyan;
+}
+
+.footer-socials {
+    margin-top: 0;
+}
+
+.footer-socials a {
+    color: #e6e6e6;
+    font-size: 25px;
+    padding: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+    color: cyan;
+}
+
+/* Gallery section styles */
+
+#main-gallery-container {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    margin: 20px auto;
+}
+
+figure {
+    margin: 10px;
+    padding: 0px;
+    position: relative;
+}
+
+figure img {
+    width: 100%;
+}
+
+#gallery img {
+    padding: 0px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 3px #ccc;
+    box-sizing: border-box;
+}
+
+figcaption {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #5e423f;
+    z-index: 1;
+    padding: 9px 0px 11px 0px;
+    font-size: 15px;
+    position: absolute;
+    bottom: 6px;
+}
+
+/* Contact form styles */
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin: 100px auto;
+    max-width: 800px;
+    margin-bottom: 35vh;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact form {
+    font-size: 18px;
+    color: #e6e6e6;
+    line-height: 2;
+    margin: 0;
+}
+
+.contact input {
+    font-size: 18px;
+    color: #848484;
+    margin: 0;
+}
+
+.submit:hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* Table styles */
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    color: #bbb;
+}
+
+/* About Us styles */
+
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 70px 50px;
+}
+
+.column {
+    flex-basis: 48%;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #e6e6e6;
+}
+
+.about-section {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin: 80px auto;
+    max-width: 800px;
+}
+
+.about-section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.about-section p {
+    color: #e6e6e6;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Call to action styles */
+
+.call-to-action {
+    background-color: rgba(75, 186, 253, 0.17);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Tours section */
+
+.tour-button-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.tour-button {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #1b1b20;
+    border: none;
+    border-radius: 3px; 
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tour-button:hover {
+    background-color: #2b6289;
+}
+
+@media screen and (max-width: 1024px) {
+    figcaption {
+        font-size: 3vw;
+    }
+
+    #gallery {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+
+    .two-column-container {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+
+    .column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .column img {
+        margin-top: 25px;
+    }
+}
