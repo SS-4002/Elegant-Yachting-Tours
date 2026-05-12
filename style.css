@@ -407,4 +407,8 @@ figcaption {
     .column img {
         margin-top: 25px;
     }
+
+    body {
+        zoom: 1.2;
+    }
 }
